@@ -23,3 +23,6 @@ def process_form():
     question = request.form.get("question")
     answer = answer_question(question)
     return render_template("result.html", question=question, answer=answer)
+
+if __name__ == "__main__":
+    app.run(debug=True)
